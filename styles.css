@@ -1,0 +1,256 @@
+/* ---------- Design tokens ---------- */
+:root {
+  --emerald: #0E4B3A;
+  --emerald-light: #1F7A5C;
+  --navy: #17324A;
+  --sand: #F3ECDD;
+  --ink: #16201C;
+  --gold: #D9A441;
+  --white: #FFFFFF;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Public Sans", sans-serif;
+}
+
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  line-height: 1.6;
+  background: var(--sand);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid rgba(22, 32, 28, 0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--emerald);
+}
+
+.nav-link {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--emerald);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: var(--emerald);
+  color: var(--white);
+  padding: 96px 0;
+}
+
+.hero-inner {
+  max-width: 640px;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 24px;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 36px;
+  max-width: 52ch;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 28px;
+  transition: transform 0.15s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Problem section ---------- */
+.problem {
+  padding: 80px 0;
+}
+
+.problem h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  max-width: 30ch;
+}
+
+.problem > .container > p {
+  max-width: 65ch;
+  margin-bottom: 32px;
+  color: rgba(22, 32, 28, 0.8);
+}
+
+.problem-list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  max-width: 70ch;
+}
+
+.problem-list li {
+  padding-left: 20px;
+  border-left: 3px solid var(--emerald-light);
+}
+
+/* ---------- Pricing section ---------- */
+.pricing {
+  background: var(--white);
+  padding: 80px 0;
+  border-top: 1px solid rgba(22, 32, 28, 0.1);
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  max-width: 30ch;
+}
+
+.pricing > .container > p {
+  max-width: 60ch;
+  color: rgba(22, 32, 28, 0.75);
+  margin-bottom: 48px;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.tier {
+  border: 1px solid rgba(22, 32, 28, 0.15);
+  border-top: 4px solid transparent;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tier-condo   { border-top-color: var(--emerald-light); }
+.tier-standard { border-top-color: var(--navy); }
+.tier-xl      { border-top-color: var(--gold); }
+
+.tier h3 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.tier-for {
+  color: rgba(22, 32, 28, 0.6);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.tier-price {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tier-price span {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: rgba(22, 32, 28, 0.6);
+}
+
+.tier-bin {
+  font-size: 0.9rem;
+  color: rgba(22, 32, 28, 0.6);
+  margin-bottom: 24px;
+}
+
+.tier-features {
+  list-style: none;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.tier-features li {
+  padding: 8px 0;
+  border-top: 1px solid rgba(22, 32, 28, 0.08);
+  font-size: 0.95rem;
+}
+
+.tier-cta {
+  display: block;
+  text-align: center;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.tier-cta:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 40px 0;
+}
+
+.footer-inner p {
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .hero {
+    padding: 64px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .tier-grid {
+    grid-template-columns: 1fr;
+  }
+}
