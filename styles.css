@@ -278,6 +278,56 @@ h1, h2, h3 {
   color: var(--white);
 }
 
+/* ---------- HOA / Bulk pricing ---------- */
+.bulk {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.bulk h2 {
+  font-size: 2rem;
+  max-width: 36ch;
+  margin: 0 auto 16px;
+}
+
+.bulk > .container > p {
+  max-width: 60ch;
+  margin: 0 auto 48px;
+  color: rgba(22, 32, 28, 0.75);
+}
+
+.bulk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.bulk-tier {
+  border-top: 4px solid var(--navy);
+  padding: 24px 16px;
+  background: var(--white);
+}
+
+.bulk-count {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.bulk-discount {
+  font-size: 0.9rem;
+  color: rgba(22, 32, 28, 0.7);
+}
+
+@media (max-width: 720px) {
+  .bulk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--navy);
