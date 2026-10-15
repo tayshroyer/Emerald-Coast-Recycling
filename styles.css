@@ -68,6 +68,11 @@ h1, h2, h3 {
   color: var(--emerald);
 }
 
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   background: var(--emerald);
