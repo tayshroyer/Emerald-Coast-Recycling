@@ -357,6 +357,81 @@ h1, h2, h3 {
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* ---------- Add-on services ---------- */
+.addons {
+  background: var(--white);
+  padding: 80px 0;
+  border-top: 1px solid rgba(22, 32, 28, 0.1);
+}
+
+.addons h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  max-width: 30ch;
+}
+
+.addons > .container > p {
+  max-width: 60ch;
+  color: rgba(22, 32, 28, 0.75);
+  margin-bottom: 40px;
+}
+
+.addon-list {
+  max-width: 760px;
+}
+
+.addon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(22, 32, 28, 0.1);
+}
+
+.addon-row:first-child {
+  border-top: none;
+}
+
+.addon-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.addon-info p {
+  font-size: 0.9rem;
+  color: rgba(22, 32, 28, 0.7);
+  max-width: 48ch;
+}
+
+.addon-price {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--emerald);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.addon-price span {
+  display: block;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: rgba(22, 32, 28, 0.6);
+}
+
+@media (max-width: 720px) {
+  .addon-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .addon-price {
+    text-align: left;
+  }
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--navy);
