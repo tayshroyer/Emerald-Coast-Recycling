@@ -338,6 +338,25 @@ h1, h2, h3 {
   }
 }
 
+/* ---------- Signup ---------- */
+.signup {
+  background: var(--emerald);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.signup > .container > p {
+  max-width: 50ch;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--navy);
