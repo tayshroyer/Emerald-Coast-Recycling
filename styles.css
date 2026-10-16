@@ -139,6 +139,36 @@ h1, h2, h3 {
   border-left: 3px solid var(--emerald-light);
 }
 
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(22, 32, 28, 0.1);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--emerald);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(22, 32, 28, 0.7);
+  max-width: 28ch;
+}
+
+@media (max-width: 720px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
 /* ---------- How It Works ---------- */
 .how-it-works {
   padding: 80px 0;
@@ -461,4 +491,9 @@ h1, h2, h3 {
   .tier-grid {
     grid-template-columns: 1fr;
   }
-}
+
+    .stat-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+} 
